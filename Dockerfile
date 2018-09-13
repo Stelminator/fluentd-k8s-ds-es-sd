@@ -15,13 +15,73 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
      -y --no-install-recommends \
      $buildDeps \
     && echo 'gem: --no-document' >> /etc/gemrc \
-    && gem install fluent-plugin-secure-forward -v 0.4.5 \
-    && gem install fluent-plugin-record-reformer -v 0.9.1 \
-    && gem install fluent-plugin-elasticsearch -v 1.13.1 \
-    && gem install fluent-plugin-google-cloud -v 0.6.14 \
-    && gem install fluent-plugin-kubernetes_metadata_filter -v 1.0.1 \
+    && gem install resolve -v hostname -v 0.1.0 \
+    && gem install proxifier -v 1.0.3 \
+    && gem install fluent -v plugin -v secure -v forward -v 0.4.5 \
+    && gem install installed \
+    && gem install fluent -v plugin -v record -v reformer -v 0.9.1 \
+    && gem install installed \
+    && gem install excon -v 0.60.0 \
+    && gem install multi_json -v 1.13.1 \
+    && gem install multipart -v post -v 2.0.0 \
+    && gem install faraday -v 0.14.0 \
+    && gem install elasticsearch -v transport -v 6.0.1 \
+    && gem install elasticsearch -v api -v 6.0.1 \
+    && gem install elasticsearch -v 6.0.1 \
+    && gem install fluent -v plugin -v elasticsearch -v 1.13.1 \
+    && gem install installed \
+    && gem install google -v protobuf -v 3.5.1.2 -v x86_64 -v linux \
+    && gem install googleapis -v common -v protos -v types -v 1.0.1 \
+    && gem install little -v plugger -v 1.1.4 \
+    && gem install logging -v 2.2.2 \
+    && gem install jwt -v 2.1.0 \
+    && gem install memoist -v 0.16.0 \
+    && gem install os -v 0.9.6 \
+    && gem install public_suffix -v 3.0.1 \
+    && gem install addressable -v 2.5.2 \
+    && gem install signet -v 0.8.1 \
+    && gem install googleauth -v 0.6.2 \
+    && gem install grpc -v 1.8.3 -v x86_64 -v linux \
+    && gem install googleapis -v common -v protos -v 1.3.7 \
+    && gem install uber -v 0.1.0 \
+    && gem install declarative -v 0.0.10 \
+    && gem install declarative -v option -v 0.1.0 \
+    && gem install representable -v 3.0.4 \
+    && gem install retriable -v 3.1.1 \
+    && gem install mime -v types -v data -v 3.2016.0521 \
+    && gem install mime -v types -v 3.1 \
+    && gem install httpclient -v 2.8.3 \
+    && gem install google -v api -v client -v 0.19.5 \
+    && gem install google -v cloud -v env -v 1.0.1 \
+    && gem install google -v cloud -v core -v 1.1.0 \
+    && gem install stackdriver -v core -v 1.2.0 \
+    && gem install rly -v 0.2.3 \
+    && gem install google -v gax -v 1.0.1 \
+    && gem install google -v cloud -v logging -v 1.4.0 \
+    && gem install fluent -v plugin -v google -v cloud -v 0.6.14 \
+    && gem install installed \
+    && gem install lru_redux -v 1.1.0 \
+    && gem install while... \
+    && gem install unf_ext -v 0.0.7.4 \
+    && gem install unf -v 0.1.4 \
+    && gem install domain_name -v 0.5.20170404 \
+    && gem install http -v cookie -v 1.0.3 \
+    && gem install netrc -v 0.11.0 \
+    && gem install rest -v client -v 2.0.2 \
+    && gem install concurrent -v ruby -v 1.0.5 \
+    && gem install i18n -v 0.9.3 \
+    && gem install activesupport -v 5.1.4 \
+    && gem install recursive -v open -v struct -v 1.0.0 \
+    && gem install http -v form_data -v 1.0.3 \
+    && gem install http -v 0.9.8 \
+    && gem install kubeclient -v 1.1.4 \
+    && gem install fluent -v plugin -v kubernetes_metadata_filter -v 1.0.1 \
+    && gem install installed \
+    && gem install while... \
     && gem install ffi -v 1.9.18 \
-    && gem install fluent-plugin-systemd -v 0.0.8 \
+    && gem install installed \
+    && gem install systemd -v journal -v 1.3.1 \
+    && gem install fluent -v plugin -v systemd -v 0.0.8 \
     && SUDO_FORCE_REMOVE=yes \
     apt-get purge -y --auto-remove \
                   -o APT::AutoRemove::RecommendsImportant=false \
