@@ -18,9 +18,7 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
     && gem install resolve -v hostname -v 0.1.0 \
     && gem install proxifier -v 1.0.3 \
     && gem install fluent -v plugin -v secure -v forward -v 0.4.5 \
-    && gem install installed \
     && gem install fluent -v plugin -v record -v reformer -v 0.9.1 \
-    && gem install installed \
     && gem install excon -v 0.60.0 \
     && gem install multi_json -v 1.13.1 \
     && gem install multipart -v post -v 2.0.0 \
@@ -29,7 +27,6 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
     && gem install elasticsearch -v api -v 6.0.1 \
     && gem install elasticsearch -v 6.0.1 \
     && gem install fluent -v plugin -v elasticsearch -v 1.13.1 \
-    && gem install installed \
     && gem install google -v protobuf -v 3.5.1.2 -v x86_64 -v linux \
     && gem install googleapis -v common -v protos -v types -v 1.0.1 \
     && gem install little -v plugger -v 1.1.4 \
@@ -59,9 +56,7 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
     && gem install google -v gax -v 1.0.1 \
     && gem install google -v cloud -v logging -v 1.4.0 \
     && gem install fluent -v plugin -v google -v cloud -v 0.6.14 \
-    && gem install installed \
     && gem install lru_redux -v 1.1.0 \
-    && gem install while... \
     && gem install unf_ext -v 0.0.7.4 \
     && gem install unf -v 0.1.4 \
     && gem install domain_name -v 0.5.20170404 \
@@ -76,10 +71,7 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
     && gem install http -v 0.9.8 \
     && gem install kubeclient -v 1.1.4 \
     && gem install fluent -v plugin -v kubernetes_metadata_filter -v 1.0.1 \
-    && gem install installed \
-    && gem install while... \
     && gem install ffi -v 1.9.18 \
-    && gem install installed \
     && gem install systemd -v journal -v 1.3.1 \
     && gem install fluent -v plugin -v systemd -v 0.0.8 \
     && SUDO_FORCE_REMOVE=yes \
