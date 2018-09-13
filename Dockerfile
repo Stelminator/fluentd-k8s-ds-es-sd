@@ -26,7 +26,7 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
      && gem install elasticsearch-api -v 6.0.1 \
      && gem install elasticsearch -v 6.0.1 \
      && gem install fluent-plugin-elasticsearch -v 1.13.1 \
-     && gem install google-protobuf-3.5.1.2-x86_64 -v linux \
+     && gem install google-protobuf-3.5.1.2-x86_64-linux \
      && gem install googleapis-common-protos-types -v 1.0.1 \
      && gem install little-plugger -v 1.1.4 \
      && gem install logging -v 2.2.2 \
@@ -37,7 +37,7 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
      && gem install addressable -v 2.5.2 \
      && gem install signet -v 0.8.1 \
      && gem install googleauth -v 0.6.2 \
-     && gem install grpc-1.8.3-x86_64 -v linux \
+     && gem install grpc-1.8.3-x86_64-linux \
      && gem install googleapis-common-protos -v 1.3.7 \
      && gem install uber -v 0.1.0 \
      && gem install declarative -v 0.0.10 \
