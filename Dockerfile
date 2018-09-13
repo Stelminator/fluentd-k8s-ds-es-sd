@@ -15,12 +15,12 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev libffi-dev" \
      -y --no-install-recommends \
      $buildDeps \
     && echo 'gem: --no-document' >> /etc/gemrc \
-    && gem install fluent-plugin-secure-forward \
-    && gem install fluent-plugin-record-reformer \
-    && gem install fluent-plugin-elasticsearch -v "<2.0" \
-    && gem install fluent-plugin-google-cloud -v "<0.7" \
-    && gem install fluent-plugin-kubernetes_metadata_filter -v "<2.0" \
-    && gem install ffi \
+    && gem install fluent-plugin-secure-forward -v 0.4.5 \
+    && gem install fluent-plugin-record-reformer -v 0.9.1 \
+    && gem install fluent-plugin-elasticsearch -v 1.13.1 \
+    && gem install fluent-plugin-google-cloud -v 0.6.14 \
+    && gem install fluent-plugin-kubernetes_metadata_filter -v 1.0.1 \
+    && gem install ffi -v 1.9.18 \
     && gem install fluent-plugin-systemd -v 0.0.8 \
     && SUDO_FORCE_REMOVE=yes \
     apt-get purge -y --auto-remove \
